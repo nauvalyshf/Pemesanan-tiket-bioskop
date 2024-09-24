@@ -1,0 +1,260 @@
+<html>
+ <head>
+  <title>
+   21 Cineplex
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-links a {
+            margin: 0 10px;
+        }
+        .header .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .header .nav-links .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .header .nav-links .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .header .nav-links .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .header .nav-links .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .header .nav-links .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content .movies {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content .movie {
+            text-align: center;
+            margin: 10px;
+        }
+        .content .movie img {
+            width: 200px;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .content .movie-title {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .content .rating {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #ffffff;
+        }
+        .rating-d17 {
+            background-color: #d9534f;
+        }
+        .rating-r13 {
+            background-color: #5bc0de;
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #e9ffe9;
+}
+
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    Cinema 16
+   </div>
+  </div>
+  <div class="content">
+   <h2>
+    Now Playing
+   </h2>
+   <div class="movies">
+    <div class="movie">
+     <img alt="Hellboy: The Crooked Man movie poster" height="300" src="agak laen.png" width="200"/>
+     <div class="movie-title">
+      Agak laen The Movie
+     </div>
+     <div class="rating rating-d17">
+      D17+
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Laura movie poster" height="300" src="warkop dki.png" width="200"/>
+     <div class="movie-title">
+      Warkop DKI Reborn
+     </div>
+     <div class="rating rating-r13">
+      R13+
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Lembayung movie poster" height="300" src="fast x.png" width="200"/>
+     <div class="movie-title">
+      Fast X
+     </div>
+     <div class="rating rating-d17">
+      D17+
+     </div>
+    </div>
+    <div class="movie">
+     <img alt="Never Let Go movie poster" height="300" src="ff hobbs & shaw.png" width="200"/>
+     <div class="movie-title">
+      fast and furious Hobbs & Shaw 
+     </div>
+     <div class="rating rating-d17">
+      D17+
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container">
+    <h1>Pemesanan Tiket Bioskop</h1>
+    
+    <form id="bookingForm">
+        <div class="form-group">
+            <label for="film">Pilih Film:</label>
+            <select id="film" required>
+                <option value="">Pilih Film</option>
+                <option value="film1">Agak laen The Movie</option>
+                <option value="film2">Warkop DKI Reborn</option>
+                <option value="film3">Fast x</option>
+                <option value="film4">Fast and Furious Hobbs & Shaw</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="tanggal">Pilih Tanggal:</label>
+            <input type="date" id="tanggal" required>
+        </div>
+
+        <div class="form-group">
+            <label for="jam">Pilih Jam:</label>
+            <select id="jam" required>
+                <option value="">Pilih Jam</option>
+                <option value="10:00">10:00</option>
+                <option value="13:00">13:00</option>
+                <option value="16:00">16:00</option>
+                <option value="19:00">19:00</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="jumlah">Jumlah Tiket:</label>
+            <input type="number" id="jumlah" min="1" max="10" required>
+        </div>
+
+        <button type="submit">Pesan Tiket</button>
+    </form>
+
+    <div id="output"></div>
+</div>
+
+ </body>
+</html>
